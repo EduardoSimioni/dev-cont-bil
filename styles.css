@@ -44,12 +44,12 @@
 h1{
     font-style: normal;
     font-weight: 800;
-    font-size: 58px;
+    font-size: 50px;
     line-height: 80px;
     color: #FFFFFF;
     position: relative;
     top: 600px;
-    margin-left: 65px;
+    margin-left: 50px;
     letter-spacing: 0.2px;
 }
 
@@ -63,6 +63,9 @@ form{
     padding: 40px;
     margin-right: 50px;
     bottom: 50px;
+    width: 480px;
+    height: 633px;
+    border: 1px #d4d4d4 solid;
 }
 
 .show-form{
@@ -185,6 +188,7 @@ li{
     justify-content: space-evenly;
     margin-top: 70px;
     margin-bottom: 150px;
+    gap: 15px;
 }
 
 .bottom-box{
@@ -209,4 +213,76 @@ p{
     line-height: 25px;
     padding: 0 70px 80px 70px;
     text-align: left;
+}
+
+@media (max-width: 700px){
+    h1{
+        display: none;
+    }
+
+    .mid-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header-title{
+        display: flex;
+        padding-bottom: 10px; 
+        font-size: 40px;
+    }
+
+    .link-header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form{
+        opacity: 0;
+        transition: opacity 1s linear;
+        background-color: #FFFFFF;;
+        border-radius: 10px;
+        position: relative;
+        float: none;
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+        height: 440px;
+        margin: 0 auto;
+        width: 300px;
+        height: 450px;
+        border: 1px #d4d4d4 solid;
+        
+    }
+
+    .form-title{
+        padding-bottom: 10px;
+    }
+
+    textarea{
+        width: 200px;
+        height: 150px; 
+        margin-bottom: 20px;
+    }
+
+    input{
+        width: 200px; 
+        height: 20px;
+    }
+
+    button{
+        width: 200px;
+        height: 25px;
+    }
+
+    .form-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: #252B42;
+        text-align: left;
+    }
+
 }
