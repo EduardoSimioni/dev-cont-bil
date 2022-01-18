@@ -228,8 +228,8 @@ p{
     }
 
     .header-title{
-        display: flex;
-        padding-bottom: 10px; 
+        display: block;
+        margin-bottom: 15px; 
         font-size: 40px;
     }
 
@@ -240,21 +240,12 @@ p{
     }
 
     form{
-        opacity: 0;
-        transition: opacity 1s linear;
-        background-color: #FFFFFF;;
-        border-radius: 10px;
-        position: relative;
         float: none;
-        align-items: center;
-        justify-content: center;
         top: 10px;
         height: 440px;
         margin: 0 auto;
         width: 300px;
         height: 450px;
-        border: 1px #d4d4d4 solid;
-        
     }
 
     .form-title{
@@ -278,11 +269,7 @@ p{
     }
 
     .form-title{
-        font-style: normal;
-        font-weight: bold;
         font-size: 25px;
         color: #252B42;
-        text-align: left;
     }
-
 }
